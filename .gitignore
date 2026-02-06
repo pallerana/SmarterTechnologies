@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+build-out/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Mac / Windows OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Binaries / locks
+*.bin
+*.lock
+

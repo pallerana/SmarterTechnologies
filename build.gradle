@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+group 'com.smartertechnologies.assessment'
 version '1.0-SNAPSHOT'
 
 // Work around environments that lock Gradle's default `build/` directory (e.g., antivirus/indexers).

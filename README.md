@@ -2,7 +2,7 @@
 
 This project contains a production-grade Java implementation of the **Core Engineering Technical Screen** from Smarter Technologies: given a package's dimensions (cm) and mass (kg), decide whether it goes to the **STANDARD**, **SPECIAL**, or **REJECTED** stack.
 
-Core logic lives in `org.example.PackageSorter`, with JUnit 5 tests in `org.example.PackageSorterTest`.
+Core logic lives in `com.smartertechnologies.assessment.PackageSorter`, with JUnit 5 tests in `com.smartertechnologies.assessment.PackageSorterTest`.
 
 ---
 
@@ -17,12 +17,12 @@ All commands below assume you are in the project root (the directory with `build
 
 ### 2. Running the main class
 
-The demo entrypoint is `org.example.Main`. It invokes `PackageSorter.sort(...)` with a few sample inputs and prints the resulting stack names.
+The demo entrypoint is `com.smartertechnologies.assessment.Main`. It invokes `PackageSorter.sort(...)` with a few sample inputs and prints the resulting stack names.
 
 #### 2.1. From an IDE (IntelliJ IDEA, VS Code, Eclipse)
 
 1. **Import the project** as a Gradle project.
-2. Locate `src/main/java/org/example/Main.java`.
+2. Locate `src/main/java/com/smartertechnologies/assessment/Main.java`.
 3. Right-click the `main` method and choose **Run 'Main.main()'**.
 
 #### 2.2. From the command line (Mac / Linux)
@@ -31,7 +31,7 @@ The demo entrypoint is `org.example.Main`. It invokes `PackageSorter.sort(...)` 
 ./gradlew clean build
 
 # Run the compiled main class
-java -cp build-out/classes/java/main org.example.Main
+java -cp build-out/classes/java/main com.smartertechnologies.assessment.Main
 ```
 
 #### 2.3. From the command line (Windows)
@@ -40,7 +40,7 @@ java -cp build-out/classes/java/main org.example.Main
 gradlew.bat clean build
 
 REM Run the compiled main class
-java -cp build-out\classes\java\main org.example.Main
+java -cp build-out\classes\java\main com.smartertechnologies.assessment.Main
 ```
 
 > Note: This project configures Gradle's build directory as `build-out` instead of the default `build`, to avoid file-lock issues on some environments.
@@ -68,7 +68,7 @@ gradlew.bat test
 
 #### 3.3. From an IDE
 
-1. Open `src/test/java/org/example/PackageSorterTest.java`.
+1. Open `src/test/java/com/smartertechnologies/assessment/PackageSorterTest.java`.
 2. Right-click the class or individual test methods.
 3. Choose **Run 'PackageSorterTest'** (or the specific test).
 

@@ -1,4 +1,4 @@
-package org.example;
+package com.smartertechnologies.assessment;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

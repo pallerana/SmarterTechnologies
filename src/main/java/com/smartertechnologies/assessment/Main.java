@@ -1,4 +1,4 @@
-package org.example;
+package com.smartertechnologies.assessment;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,3 +9,4 @@ public class Main {
         System.out.println(PackageSorter.sort(150, 10, 10, 20));  // REJECTED (bulky + heavy)
     }
 }
+

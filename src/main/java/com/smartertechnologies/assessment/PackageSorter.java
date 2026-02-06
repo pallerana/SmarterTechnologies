@@ -1,4 +1,4 @@
-package org.example;
+package com.smartertechnologies.assessment;
 
 import java.util.Objects;
 

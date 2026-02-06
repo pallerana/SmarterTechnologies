@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.PackageSorterTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-02-06T14:03:07" hostname="RPALLE" time="0.055">
+  <properties/>
+  <testcase name="special_whenBulkyOnly_byDimensionJustAboveThreshold()" classname="org.example.PackageSorterTest" time="0.032"/>
+  <testcase name="special_whenBulkyOnly_byVolumeJustAboveThreshold()" classname="org.example.PackageSorterTest" time="0.0"/>
+  <testcase name="special_whenHeavyOnly_strictlyAboveThreshold()" classname="org.example.PackageSorterTest" time="0.001"/>
+  <testcase name="negativeInputsRejected()" classname="org.example.PackageSorterTest" time="0.014"/>
+  <testcase name="special_whenHeavyOnly_massAtThreshold()" classname="org.example.PackageSorterTest" time="0.001"/>
+  <testcase name="standard_justBelowAllThresholds()" classname="org.example.PackageSorterTest" time="0.001"/>
+  <testcase name="special_whenBulkyOnly_byVolumeAtThreshold()" classname="org.example.PackageSorterTest" time="0.0"/>
+  <testcase name="standard_atZeroValues()" classname="org.example.PackageSorterTest" time="0.0"/>
+  <testcase name="treatsOverflowingVolumeAsBulky()" classname="org.example.PackageSorterTest" time="0.001"/>
+  <testcase name="standard_whenNotBulkyAndNotHeavy()" classname="org.example.PackageSorterTest" time="0.001"/>
+  <testcase name="rejected_whenBulkyAndHeavy()" classname="org.example.PackageSorterTest" time="0.0"/>
+  <testcase name="special_whenBulkyOnly_byDimensionAtThreshold()" classname="org.example.PackageSorterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

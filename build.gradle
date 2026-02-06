@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+// Work around environments that lock Gradle's default `build/` directory (e.g., antivirus/indexers).
+// Using a non-default build directory avoids flaky "Unable to delete directory" errors during `clean`/`test`.
+buildDir = file("build-out")
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+
+    // Some environments intermittently lock Gradle's test binary results directory, causing failures
+    // before tests even run. Use a unique directory per invocation to avoid delete contention.
+    def runId = System.currentTimeMillis()
+    binaryResultsDirectory = file("${buildDir}/test-results/${runId}/binary")
+    reports.junitXml.outputLocation = file("${buildDir}/test-results/${runId}/junitXml")
+    reports.html.outputLocation = file("${buildDir}/reports/tests/${runId}")
+}
